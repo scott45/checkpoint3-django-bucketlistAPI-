@@ -8,6 +8,9 @@ class Bucketlist(models.Model):
     date_modified = models.DateTimeField(auto_now=True)
     created_by = models.ForeignKey(User, on_delete=models.CASCADE)
 
+    def get_name(self):
+        return self.name
+
     def __str__(self):
         return self.name
 
@@ -17,6 +20,9 @@ class Item(models.Model):
     date_created = models.DateTimeField(auto_now_add=True)
     date_modified = models.DateTimeField(auto_now=True)
     bucketlist = models.ForeignKey(Bucketlist, on_delete=models.CASCADE)
+
+    def get_name(self):
+        return self.name
 
     def __str__(self):
         return self.name
