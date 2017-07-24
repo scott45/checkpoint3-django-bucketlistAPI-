@@ -1,3 +1,10 @@
 from django.test import TestCase
+from .models import Bucketlist, Item
 
-# Create your tests here.
+
+class BucketlistTest(TestCase):
+    pass
+
+
+class ItemTest(TestCase):
+    pass
