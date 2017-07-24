@@ -28,7 +28,9 @@ def get_delete_update_bucketlist(request, pk):
 def get_post_bucketlist(request):
     # get all bucketlists
     if request.method == 'GET':
-        return Response({})
+        puppies = Bucketlist.objects.all()
+        serializer = BucketlistSerializer(puppies, many=True)
+        return Response(serializer.data)
     # insert a new record for a bucketlist
     elif request.method == 'POST':
         return Response({})
