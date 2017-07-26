@@ -95,26 +95,23 @@ DELETE bucketlist/api/v1/bucketlists/2/id/items/item_id | Deletes an item in a b
 
 ### Screenshots
 
->Register
+>Get bucketlists
 ![alt text](screenshots/register.png)
 
->Login
+>Get one bucketlist
 ![alt text](screenshots/login.png)
 
->add bucket
+>add bucketlist
 ![alt text](screenshots/add-bucket.png)
 
->list all buckets
+>Delete Bucketlist
 ![alt text](screenshots/get-buckets.png)
 
->get single bucket
+>Django home Admin page
 ![alt text](screenshots/get-single-bucket.png)
 
->add item
+>Saved bucketlists as seen in DB
 ![alt text](screenshots/add-item.png)
-
-delete
-![alt text](screenshots/delete.png)
 
 ### Searching
 
