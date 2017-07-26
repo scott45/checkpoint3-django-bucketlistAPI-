@@ -72,31 +72,26 @@ Install all app requirements
 `$ pip install -r requirements.txt`
 Create the database and run migrations
 
-`$ createdb bucketlist_db`
+`$ python manage.py makemigrations
 
-`$ createdb testing_db`
+`$ python manage.py migrate
 
-`$ python manage.py db init`
 
-`$ python manage.py db migrate`
-
-`$ python manage.py db upgrade`
-
-All done! Now, start your server by running `python manage.py runserver`. You could use a GUI platform like [postman](https://www.getpostman.com/) to make requests to and fro the api.
+All done! Now, start your server by running `python manage.py runserver`. DRF (django restframework) interface will pop up if you use the right endpoints
 ### Endpoints
 
 Here is a list of all the endpoints in bucketlist app.
 
 Endpoint | Functionality| Access
 ------------ | ------------- | ------------- 
-POST bucketlist/app/v1/bucketlists/ | Creates a new bucket list | PRIVATE
-GET bucketlist/app/v1/bucketlists/ | Lists all created bucket lists | PRIVATE
-GET bucketlist/app/v1/bucketlists/id | Gets a single bucket list with the suppled id | PRIVATE
-PUT bucketlist/app/v1/bucketlists/id | Updates bucket list with the suppled id | PRIVATE
-DELETE bucketlist/app/v1/bucketlists/id | Deletes bucket list with the suppled id | PRIVATE
-POST bucketlist/app/v1/bucketlists/id/items/ | Creates a new item in bucket list | PRIVATE
-PUT bucketlist/app/v1/bucketlists/id/items/item_id | Updates a bucket list item | PRIVATE
-DELETE bucketlist/app/v1/bucketlists/id/items/item_id | Deletes an item in a bucket list | PRIVATE
+POST bucketlist/api/v1/bucketlists/2 | Creates a new bucket list
+GET bucketlist/api/v1/bucketlists/2 | Lists all created bucket lists
+GET bucketlist/api/v1/bucketlists/2 | Gets a single bucket list with the suppled id
+PUT bucketlist/api/v1/bucketlists/2 | Updates bucket list with the suppled id
+DELETE bucketlist/api/v1/bucketlists/2 | Deletes bucket list with the suppled id
+POST bucketlist/api/v1/bucketlists/2/id/items/ | Creates a new item in bucket list
+PUT bucketlist/api/v1/bucketlists/2/id/items/item_id | Updates a bucket list item
+DELETE bucketlist/api/v1/bucketlists/2/id/items/item_id | Deletes an item in a bucket list
 
 ### Screenshots
 
