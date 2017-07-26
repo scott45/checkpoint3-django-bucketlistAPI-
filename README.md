@@ -104,7 +104,7 @@ DELETE bucketlist/api/v1/bucketlists/2/id/items/item_id | Deletes an item in a b
 >add bucketlist
 ![alt text](screenshots/add-bucket.png)
 
->Delete Bucketlist
+>Update and Delete a single Bucketlist
 ![alt text](screenshots/get-buckets.png)
 
 >Django home Admin page
