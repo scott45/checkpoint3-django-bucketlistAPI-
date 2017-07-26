@@ -100,26 +100,14 @@ DELETE bucketlist/app/v1/bucketlists/id/items/item_id | Deletes an item in a buc
 
 ### Screenshots
 
->Register
-![alt text](screenshots/register.png)
+>Get bucketlists (works for adding a bucketlist)
+![alt text](screenshots/getall.png)
 
->Login
-![alt text](screenshots/login.png)
+>Get one bucketlist
+![alt text](screenshots/next.png)
 
->add bucket
-![alt text](screenshots/add-bucket.png)
-
->list all buckets
-![alt text](screenshots/get-buckets.png)
-
->get single bucket
-![alt text](screenshots/get-single-bucket.png)
-
->add item
-![alt text](screenshots/add-item.png)
-
-delete
-![alt text](screenshots/delete.png)
+>Update and Delete a single Bucketlist
+![alt text](screenshots/next.png)
 
 ### Searching
 
