@@ -10,6 +10,12 @@ from .serializers import BucketlistSerializer, ItemSerializer
 # initialize the APIClient app
 client = Client()
 
+'''
+user cp3
+password cp3scott
+email cp3@gmail.com
+'''
+
 # tests for bucketlist and item models
 
 
