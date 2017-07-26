@@ -1,3 +1,14 @@
 from django.contrib import admin
+from .models import Bucketlist, Item
 
-# Register your models here.
+
+class BucketlistAdmin(admin.ModelAdmin):
+    pass
+
+admin.site.register(Bucketlist, BucketlistAdmin)
+
+
+class ItemAdmin(admin.ModelAdmin):
+    pass
+
+admin.site.register(Item, ItemAdmin)
