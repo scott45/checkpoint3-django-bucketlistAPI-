@@ -14,13 +14,19 @@ def get_delete_update_bucketlist(request, pk):
 
     # get details of a single bucketlist
     if request.method == 'GET':
-        return Response({})
+        serializer = BucketlistSerializer(bklist)
+        return Response(serializer.data)
     # delete a single bucketlist
     elif request.method == 'DELETE':
-        return Response({})
+        bklist.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
     # update details of a single bucketlist
     elif request.method == 'PUT':
-        return Response({})
+        serializer = BucketlistSerializer(bklist, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
 @api_view(['GET', 'POST'])
