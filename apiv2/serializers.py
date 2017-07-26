@@ -5,10 +5,10 @@ from .models import Bucketlist, Item
 class BucketlistSerializer(serializers.ModelSerializer):
     class Meta:
         model = Bucketlist
-        fields = ('name', 'date_created_at', 'date_modified', 'created_by')
+        fields = ('name', 'date_created', 'date_modified', 'created_by')
 
 
 class ItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = Item
-        fields = ('name', 'date_created_at', 'date_modified', 'bucketlist')
+        fields = ('name', 'date_created', 'date_modified', 'bucketlist')
